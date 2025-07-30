@@ -1,0 +1,139 @@
+// COLORS
+$primary: #8b5e3c;
+$light-bg: #fffaf4;
+$text-color: #5c3d25;
+$shadow-color: rgba(150, 100, 50, 0.1);
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: $text-color;
+}
+
+// Navbar
+.navbar {
+  background-color: lighten($primary, 45%);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid lighten($primary, 30%);
+  box-shadow: 0 2px 10px $shadow-color;
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: $primary;
+  }
+
+  #searchBar {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1.5px solid lighten($primary, 20%);
+    border-radius: 6px;
+    width: 250px;
+  }
+
+  .cart-btn {
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+// Hero Section
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #fff3e3, #fdf7f2);
+  color: darken($primary, 15%);
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+// Products
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+.product-card {
+  background-color: $light-bg;
+  border: 1px solid lighten($primary, 30%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px $shadow-color;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(150, 100, 50, 0.2);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    color: darken($primary, 10%);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $text-color;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    display: block;
+    color: $primary;
+  }
+
+  .buy-btn {
+    margin-top: 1rem;
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: darken($primary, 5%);
+    }
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: lighten($primary, 40%);
+  font-size: 0.95rem;
+  color: darken($primary, 20%);
+  margin-top: 2rem;
+  border-top: 1px solid lighten($primary, 30%);
+}

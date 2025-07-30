@@ -1,0 +1,353 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #5c3d25;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fffaf4;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e0c8a1;
+  box-shadow: 0 2px 10px rgba(200, 180, 140, 0.2);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #8b5e3c;
+}
+
+#searchBar {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1.5px solid #c9a57f;
+  border-radius: 6px;
+  width: 250px;
+}
+
+.cart-btn {
+  background-color: #a16c44;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #fff3e3, #fdf7f2);
+  color: #6d4421;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+/* Products Grid */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fffaf4;
+  border: 1px solid #e6d3b3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(150, 100, 50, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(150, 100, 50, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.3rem;
+  color: #7a4c2a;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #5b3c1a;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  display: block;
+  color: #a06030;
+}
+
+.buy-btn {
+  margin-top: 1rem;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #a16846;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f1e7;
+  font-size: 0.95rem;
+  color: #7c5435;
+  margin-top: 2rem;
+  border-top: 1px solid #e6d3b3;
+}
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #searchBar {
+    width: 100%;
+  }
+
+  .products-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .cart-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .hero-split {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-image {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+
+
+.logo {
+  font-family: 'Playfair Display', serif; /* Stylish serif font */
+  font-size: 3rem;                        /* Bigger text */
+  font-weight: 700;                       /* Bold */
+  color: #8b5e3c;                         /* Henna-brown */
+  letter-spacing: 2px;                   /* Spacing between letters */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 0;
+}
+
+
+  #searchBar {
+    order: 2;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cart-btn {
+    order: 3;
+  }
+
+.buy-btn {
+  margin-top: 15px; /* add spacing */
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  margin-bottom: 10px; /* optional for better spacing */
+  color: #a06030;
+  display: block;
+}
+.navbar {
+  background: url('https://img.freepik.com/premium-vector/henna-mehndi-hands-vector-illustration-hand-drawn-henna-vector-design_690091-4.jpg?w=826') no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #e6d3b3;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #b47c4c;
+  margin: 8px auto 0;
+  border-radius: 5px;
+}
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff8f0;
+  padding: 3rem 4rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+  color: #5a371f;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #7a4a2e;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-text h1 span {
+  color: #a0522d;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.hero-text .branding {
+  font-size: 0.95rem;
+  color: #6d4c41;
+  font-style: italic;
+}
+
+.explore-btn {
+  background-color: #8b5e3c;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #a96c45;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.hero-image img {
+  max-width: 450px;      /* Limit image width */
+  width: 100%;           /* Make it responsive */
+  height: auto;          /* Maintain aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.insta-link img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.insta-link img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
